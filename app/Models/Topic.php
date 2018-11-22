@@ -16,7 +16,7 @@ class Topic extends Model
         return $this->belongsTo(User::class);
     }
 
-    public scopeWithOrder($query, $order)
+    public function scopeWithOrder($query, $order)
     {
         switch ($order) {
             case 'recent':
